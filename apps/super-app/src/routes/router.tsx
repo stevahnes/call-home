@@ -6,8 +6,10 @@ export function AppRoutes() {
   return (
     <Routes>
       <Route path={Path.Home} element={<LandingPage />}></Route>
-      <Route path={Path.SupportDetail} element={<SupportDetailPage />}></Route>
-
+      <Route
+        path={`${Path.SupportDetail}/:partner`}
+        element={<SupportDetailPage />}
+      ></Route>
       <Route path={Path.Options} element={<Options />}></Route>
     </Routes>
   );
