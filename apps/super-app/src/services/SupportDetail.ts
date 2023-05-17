@@ -81,15 +81,29 @@ export function getServiceCardDetails(): ServiceCardDetail[] {
       logo: 'https://www.agoodspace.org/wp-content/uploads/2020/09/0.png',
       name: 'ItsRainingRaincoats',
       shortBlurb:
-        'Register for interactive activities, learning programs, and welfare programs',
+        'Register for interactive activities, learning, and welfare programs',
       route: `${Path.SupportDetail}/irr`,
     },
     {
       logo: 'https://img.paperform.co/fetch/w_400,f_auto/https://s3.amazonaws.com/pf-upload-01/u-40359/1/2019-10-07/xm03ygs/HealthServe%20Logo%20colour.png',
       name: 'HealthServe',
       shortBlurb:
-        'Provides mental health and counseling hotline',
+        'Call us for mental health and counseling hotline',
       route: `${Path.SupportDetail}/healthserve`,
+    },
+    {
+      logo: 'https://www.aidha.org/wp-content/uploads/2018/06/logo.jpg',
+      name: 'Aidha',
+      shortBlurb:
+        'Learn financial literacy and confidence skills',
+      route: `${Path.SupportDetail}/aidha`,
+    },
+    {
+      logo: 'https://acmi.org.sg/wp-content/uploads/2022/09/logo.png',
+      name: 'ACMI',
+      shortBlurb:
+        'Reach out to us for skills development and well-being support',
+      route: `${Path.SupportDetail}/acmi`,
     },
   ];
 }
@@ -226,6 +240,58 @@ const HEALTHSERVE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
   },
 };
 
+const AIDHA_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
+  en: {
+    logo: 'https://www.aidha.org/wp-content/uploads/2018/06/logo.jpg',
+    name: 'Aidha',
+    website: 'https://www.aidha.org/',
+    blurbIntro: 'Aidha offers courses for helpers in money management, communication, computer and entrepreneurship. Aidha’s mission is to help migrant domestic workers and low-income Singaporean women achieve economic independence through financial education, wealth creation and entrepreneurship. Founded in 2006, Aidha is an award-winning charity with Institution of Public Character (IPC) status. We have 500 students currently enrolled in our programmes.',
+    blurbFacebookLinks: {
+      title: '',
+      imageSrc: '',
+      links: [
+        {
+          href: '',
+          text: '',
+        },
+        {
+          href: '',
+          text: '',
+        },
+      ],
+    },
+    ctaButtonText: 'Enrol in free short courses',
+    ctaLink: 'https://www.aidha.org/courses/free-short-courses/',
+    ctaIcon: '',
+  },
+};
+
+const ACMI_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
+  en: {
+    logo: 'https://acmi.org.sg/wp-content/uploads/2022/09/logo.png',
+    name: 'ACMI',
+    website: 'https://acmi.org.sg/',
+    blurbIntro: 'ACMI was commissioned on June 15 with the mission of meeting the special pastoral needs of migrants and itinerant people in the Archdiocese in Singapore, and conducted activities like raising awareness to newspapers and having a hotline for those in need to call.',
+    blurbFacebookLinks: {
+      title: '',
+      imageSrc: '',
+      links: [
+        {
+          href: '',
+          text: '',
+        },
+        {
+          href: '',
+          text: '',
+        },
+      ],
+    },
+    ctaButtonText: 'Explore our skills development services',
+    ctaLink: 'https://acmi.org.sg/skills-development/',
+    ctaIcon: '',
+  },
+};
+
 export function getPartnerDetail(partner: string | undefined, language: LanguageOption): SupportDetailWithSocials {
   switch (partner) {
     case 'twc2':
@@ -236,6 +302,10 @@ export function getPartnerDetail(partner: string | undefined, language: Language
       return IRR_DETAIL[language];
     case 'healthserve':
       return HEALTHSERVE_DETAIL[language];
+    case 'aidha':
+      return AIDHA_DETAIL[language];
+    case 'acmi':
+      return ACMI_DETAIL[language];
     default:
       return EMPTY_DETAIL[language];
   }
