@@ -105,6 +105,13 @@ export function getServiceCardDetails(): ServiceCardDetail[] {
         'Reach out to us for skills development and well-being support',
       route: `${Path.SupportDetail}/acmi`,
     },
+    {
+      logo: 'https://images.squarespace-cdn.com/content/v1/5a12725612abd96b9c737354/1512006074840-DDTG0JDU6HZ72GX7KSO9/HOME+Logo.jpg?format=1500w',
+      name: 'HOME',
+      shortBlurb:
+        'Get in touch with our helpline',
+      route: `${Path.SupportDetail}/home`,
+    },
   ];
 }
 
@@ -292,6 +299,32 @@ const ACMI_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
   },
 };
 
+const HOME_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
+  en: {
+    logo: 'https://images.squarespace-cdn.com/content/v1/5a12725612abd96b9c737354/1512006074840-DDTG0JDU6HZ72GX7KSO9/HOME+Logo.jpg?format=1500w',
+    name: 'HOME',
+    website: 'https://www.home.org.sg/',
+    blurbIntro: 'Humanitarian Organization for Migration Economics [“H.O.M.E.”] is a Singapore-based charity founded in 2004 by the late Ms Bridget Tan. HOME is dedicated to empowering and supporting migrant workers who experience abuse and exploitation. We provide immediate crisis intervention as well as long-term support such as education and training programmes to achieve our goal of enhancing the wellbeing and employment prospects of migrant workers. HOME also promotes the diverse voices of migrant workers in Singapore through outreach projects, and public education. Three pillars guide us: Welfare, Empowerment and Advocacy.',
+    blurbFacebookLinks: {
+      title: '',
+      imageSrc: '',
+      links: [
+        {
+          href: '',
+          text: '',
+        },
+        {
+          href: '',
+          text: '',
+        },
+      ],
+    },
+    ctaButtonText: '+65 9787 3122',
+    ctaLink: 'https://wa.me/6597873122',
+    ctaIcon: '/images/whatsapp-icon.svg',
+  },
+};
+
 export function getPartnerDetail(partner: string | undefined, language: LanguageOption): SupportDetailWithSocials {
   switch (partner) {
     case 'twc2':
@@ -306,6 +339,8 @@ export function getPartnerDetail(partner: string | undefined, language: Language
       return AIDHA_DETAIL[language];
     case 'acmi':
       return ACMI_DETAIL[language];
+    case 'home':
+      return HOME_DETAIL[language];
     default:
       return EMPTY_DETAIL[language];
   }
