@@ -112,6 +112,13 @@ export function getServiceCardDetails(): ServiceCardDetail[] {
         'Get in touch with our helpline',
       route: `${Path.SupportDetail}/home`,
     },
+     {
+      logo: 'https://scontent.fsin3-1.fna.fbcdn.net/v/t1.18169-9/13076581_612143168942885_2440759659123028479_n.png?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=hYQXtTI7hiUAX8X8AOi&_nc_ht=scontent.fsin3-1.fna&oh=00_AfCL2PBhYS1bKjNP95GT2tJQLnmnmxkM9Lh5srSezScQog&oe=64904C2D',
+      name: 'Centre for Domestic Employees (CDE)',
+      shortBlurb:
+        '24-hour toll-free helpline and fun social activities',
+      route: `${Path.SupportDetail}/cde`,
+    },
   ];
 }
 
@@ -325,6 +332,32 @@ const HOME_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
   },
 };
 
+const CDE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
+  en: {
+    logo: 'https://scontent.fsin3-1.fna.fbcdn.net/v/t1.18169-9/13076581_612143168942885_2440759659123028479_n.png?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=hYQXtTI7hiUAX8X8AOi&_nc_ht=scontent.fsin3-1.fna&oh=00_AfCL2PBhYS1bKjNP95GT2tJQLnmnmxkM9Lh5srSezScQog&oe=64904C2D',
+    name: 'Centre for Domestic Employees (CDE)',
+    website: 'https://www.cde.org.sg/wps/portal/cde/home/',
+    blurbIntro: 'The Centre for Domestic Employees (CDE) promote the fair treatment of all domestic employees in Singapore through issues resolution, humanitarian aid, social integration and support. We can support you in up-skilling and emotional resilience',
+    blurbFacebookLinks: {
+      title: 'Find us on Facebook',
+      imageSrc: '/images/facebook-icon.svg',
+      links: [
+        {
+          href: 'www.facebook.com/cde.singapore',
+          text: 'CDE Facebook',
+        },
+        {
+          href: '',
+          text: '',
+        },
+      ],
+    },
+    ctaButtonText: 'Call our 24-hour helpline',
+    ctaLink: 'tel:+65%201800%202255%20233',
+    ctaIcon: '',
+  },
+};
+
 export function getPartnerDetail(partner: string | undefined, language: LanguageOption): SupportDetailWithSocials {
   switch (partner) {
     case 'twc2':
@@ -341,6 +374,8 @@ export function getPartnerDetail(partner: string | undefined, language: Language
       return ACMI_DETAIL[language];
     case 'home':
       return HOME_DETAIL[language];
+    case 'cde':
+      return CDE_DETAIL[language];
     default:
       return EMPTY_DETAIL[language];
   }
