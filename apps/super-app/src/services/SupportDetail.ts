@@ -346,10 +346,6 @@ const CDE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
           href: 'www.facebook.com/cde.singapore',
           text: 'CDE Facebook',
         },
-        {
-          href: '',
-          text: '',
-        },
       ],
     },
     ctaButtonText: 'Call our 24-hour helpline',
