@@ -119,6 +119,14 @@ export function getServiceCardDetails(): ServiceCardDetail[] {
         '24-hour toll-free helpline and fun social activities',
       route: `${Path.SupportDetail}/cde`,
     },
+       {
+      logo: 'https://www.fast.org.sg/assets/footer/FAST-Logo.png',
+      name: 'Foreign Domestic Worker Association for Social Support and Training (FAST)',
+      shortBlurb:
+        'Visit our website for social support, training, and events.',
+      route: `${Path.SupportDetail}/fast`,
+    },
+  
   ];
 }
 
@@ -353,6 +361,41 @@ const CDE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     ctaIcon: '',
   },
 };
+  
+  const FAST_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
+  en: {
+    logo: 'https://www.fast.org.sg/assets/footer/FAST-Logo.png',
+    name: 'Foreign Domestic Worker Association for Social Support and Training (FAST)',
+    website: 'https://www.fast.org.sg/',
+    blurbIntro: 'FAST empowers foreign domestic workers through various programs, including skills training, counseling, and community engagement, fostering their well-being and integration into society. FAST also conducts a two-day Onboarding and Integration Programme to help new MDW arrivals adjust and adapt to work life in Singapore, learning life essentials',
+    blurbFacebookLinks: {
+      title: 'Explore our services',
+      imageSrc: 'https://cdn-icons-png.flaticon.com/512/2491/2491484.png',
+   links: [
+        {
+          href: 'https://www.fast.org.sg/staticpage/event',
+          text: 'Events',
+        },
+        {
+          href: 'https://www.fast.org.sg/training/lifelong-learning',
+          text: 'Training',
+        },
+          {
+          href: 'https://www.fast.org.sg/clubhouse',
+          text: 'Clubhouse',
+        },
+            {
+          href: 'https://www.fast.org.sg/social-support',
+          text: 'Our services: 24-hour helpline, counseling, mediation, befriender, legal aid, humanitarian aid',
+        },
+      ],
+  
+    },
+    ctaButtonText: 'Visit our website for a list of our services',
+    ctaLink: 'https://www.fast.org.sg/social-support',
+    ctaIcon: '',
+  }, 
+};
 
 export function getPartnerDetail(partner: string | undefined, language: LanguageOption): SupportDetailWithSocials {
   switch (partner) {
@@ -372,6 +415,8 @@ export function getPartnerDetail(partner: string | undefined, language: Language
       return HOME_DETAIL[language];
     case 'cde':
       return CDE_DETAIL[language];
+     case 'fast':
+      return FAST_DETAIL[language];
     default:
       return EMPTY_DETAIL[language];
   }
