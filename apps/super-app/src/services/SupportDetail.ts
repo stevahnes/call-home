@@ -388,6 +388,10 @@ const CDE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
           href: 'https://www.fast.org.sg/social-support',
           text: 'Our services: 24-hour helpline, counseling, mediation, befriender, legal aid, humanitarian aid',
         },
+        {
+          href: 'https://www.facebook.com/FAST.org.sg',
+          text: 'Facebook page',
+        },
       ],
   
     },
