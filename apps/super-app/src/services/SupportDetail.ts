@@ -119,12 +119,19 @@ export function getServiceCardDetails(): ServiceCardDetail[] {
         '24-hour toll-free helpline and fun social activities',
       route: `${Path.SupportDetail}/cde`,
     },
-       {
+     {
       logo: 'https://www.fast.org.sg/assets/footer/FAST-Logo.png',
       name: 'Foreign Domestic Worker Association for Social Support and Training (FAST)',
       shortBlurb:
-        'Visit our website for social support, training, and events.',
+        'Visit our website for social support, training, and events',
       route: `${Path.SupportDetail}/fast`,
+    },
+     {
+      logo: 'https://hagar.org.sg/wp-content/uploads/2019/05/Masterlogo300.jpg',
+      name: 'Hagar Singapore',
+      shortBlurb:
+        'Message us for advise on recovery and reintegration programs, for victims of human trafficking',
+      route: `${Path.SupportDetail}/hagar`,
     },
   
   ];
@@ -400,6 +407,31 @@ const CDE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     ctaIcon: '',
   }, 
 };
+  
+  
+  const HAGAR_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
+  en: {
+    logo: 'https://hagar.org.sg/wp-content/uploads/2019/05/Masterlogo300.jpg',
+    name: 'Hagar',
+    website: 'https://hagar.org.sg/human-trafficking-in-singapore/',
+    blurbIntro: ': Hagar Singapore provides holistic support to survivors of human trafficking, offering shelter, counseling, education, and vocational training to empower them towards a new and dignified life.',
+    blurbFacebookLinks: {
+      title: '',
+      imageSrc: '/images/facebook-icon.svg',
+   links: [
+       
+        {
+          href: 'https://www.facebook.com/HagarSingapore/',
+          text: 'Facebook page',
+        },
+      ],
+  
+    },
+    ctaButtonText: 'Message us on Facebook',
+    ctaLink: 'https://www.facebook.com/HagarSingapore/',
+    ctaIcon: '',
+  }, 
+};
 
 export function getPartnerDetail(partner: string | undefined, language: LanguageOption): SupportDetailWithSocials {
   switch (partner) {
@@ -421,6 +453,8 @@ export function getPartnerDetail(partner: string | undefined, language: Language
       return CDE_DETAIL[language];
      case 'fast':
       return FAST_DETAIL[language];
+     case 'hagar':
+      return HAGAR_DETAIL[language];  
     default:
       return EMPTY_DETAIL[language];
   }
