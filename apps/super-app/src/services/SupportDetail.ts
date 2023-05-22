@@ -133,7 +133,13 @@ export function getServiceCardDetails(): ServiceCardDetail[] {
         'Message us for advise on recovery and reintegration programs, for victims of human trafficking',
       route: `${Path.SupportDetail}/hagar`,
     },
-  
+     {
+      logo: 'https://forjusticewithoutborders.org/wp-content/themes/jwb/dist/vue/ef4c8813de08deca2bebc3cab7c2c4c4.png',
+      name: 'Justice Without Borders (JWB)',
+      shortBlurb:
+        'Message us for help to get your compensation, even after returning home',
+      route: `${Path.SupportDetail}/jwb`,
+    }, 
   ];
 }
 
@@ -414,7 +420,7 @@ const CDE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     logo: 'https://hagar.org.sg/wp-content/uploads/2019/05/Masterlogo300.jpg',
     name: 'Hagar',
     website: 'https://hagar.org.sg/human-trafficking-in-singapore/',
-    blurbIntro: ': Hagar Singapore provides holistic support to survivors of human trafficking, offering shelter, counseling, education, and vocational training to empower them towards a new and dignified life.',
+    blurbIntro: 'Hagar Singapore provides holistic support to survivors of human trafficking, offering shelter, counseling, education, and vocational training to empower them towards a new and dignified life.',
     blurbFacebookLinks: {
       title: '',
       imageSrc: '/images/facebook-icon.svg',
@@ -433,6 +439,31 @@ const CDE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
   }, 
 };
 
+  const JWB_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
+  en: {
+    logo: 'https://forjusticewithoutborders.org/wp-content/themes/jwb/dist/vue/ef4c8813de08deca2bebc3cab7c2c4c4.png',
+    name: 'Justice Without Borders (JWB)',
+    website: 'https://forjusticewithoutborders.org/about/',
+    blurbIntro: 'We support victims of labour exploitation and human trafficking in getting compensation against their abusers, even after they return home.',
+    blurbFacebookLinks: {
+      title: '',
+      imageSrc: '/images/facebook-icon.svg',
+   links: [
+       
+        {
+          href: 'https://www.facebook.com/forJWB',
+          text: 'Facebook page',
+        },
+      ],
+  
+    },
+    ctaButtonText: 'We can help you claim compensation',
+    ctaLink: 'https://forjusticewithoutborders.org/get-help/',
+    ctaIcon: '',
+  }, 
+};  
+  
+  
 export function getPartnerDetail(partner: string | undefined, language: LanguageOption): SupportDetailWithSocials {
   switch (partner) {
     case 'twc2':
@@ -455,6 +486,8 @@ export function getPartnerDetail(partner: string | undefined, language: Language
       return FAST_DETAIL[language];
      case 'hagar':
       return HAGAR_DETAIL[language];  
+     case 'jwb':
+      return JWB_DETAIL[language];  
     default:
       return EMPTY_DETAIL[language];
   }
