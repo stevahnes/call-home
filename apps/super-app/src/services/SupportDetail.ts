@@ -87,15 +87,13 @@ export function getServiceCardDetails(): ServiceCardDetail[] {
     {
       logo: 'https://img.paperform.co/fetch/w_400,f_auto/https://s3.amazonaws.com/pf-upload-01/u-40359/1/2019-10-07/xm03ygs/HealthServe%20Logo%20colour.png',
       name: 'HealthServe',
-      shortBlurb:
-        'Call us for mental health and counseling hotline',
+      shortBlurb: 'Call us for mental health and counseling hotline',
       route: `${Path.SupportDetail}/healthserve`,
     },
     {
       logo: 'https://www.aidha.org/wp-content/uploads/2018/06/logo.jpg',
       name: 'Aidha',
-      shortBlurb:
-        'Learn financial literacy and confidence skills',
+      shortBlurb: 'Learn financial literacy and confidence skills',
       route: `${Path.SupportDetail}/aidha`,
     },
     {
@@ -108,38 +106,35 @@ export function getServiceCardDetails(): ServiceCardDetail[] {
     {
       logo: 'https://images.squarespace-cdn.com/content/v1/5a12725612abd96b9c737354/1512006074840-DDTG0JDU6HZ72GX7KSO9/HOME+Logo.jpg?format=1500w',
       name: 'HOME',
-      shortBlurb:
-        'Get in touch with our helpline',
+      shortBlurb: 'Get in touch with our helpline',
       route: `${Path.SupportDetail}/home`,
     },
-     {
+    {
       logo: 'https://scontent.fsin3-1.fna.fbcdn.net/v/t1.18169-9/13076581_612143168942885_2440759659123028479_n.png?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=hYQXtTI7hiUAX8X8AOi&_nc_ht=scontent.fsin3-1.fna&oh=00_AfCL2PBhYS1bKjNP95GT2tJQLnmnmxkM9Lh5srSezScQog&oe=64904C2D',
       name: 'Centre for Domestic Employees (CDE)',
-      shortBlurb:
-        '24-hour toll-free helpline and fun social activities',
+      shortBlurb: '24-hour toll-free helpline and fun social activities',
       route: `${Path.SupportDetail}/cde`,
     },
-     {
-      logo: 'https://www.fast.org.sg/assets/footer/FAST-Logo.png',
+    {
+      logo: '/images/fast-logo.png',
       name: 'Foreign Domestic Worker Association for Social Support and Training (FAST)',
-      shortBlurb:
-        'Visit our website for social support, training, and events',
+      shortBlurb: 'Visit our website for social support, training, and events',
       route: `${Path.SupportDetail}/fast`,
     },
-     {
+    {
       logo: 'https://hagar.org.sg/wp-content/uploads/2019/05/Masterlogo300.jpg',
       name: 'Hagar Singapore',
       shortBlurb:
         'Message us for advise on recovery and reintegration programs, for victims of human trafficking',
       route: `${Path.SupportDetail}/hagar`,
     },
-     {
+    {
       logo: 'https://forjusticewithoutborders.org/wp-content/themes/jwb/dist/vue/ef4c8813de08deca2bebc3cab7c2c4c4.png',
       name: 'Justice Without Borders (JWB)',
       shortBlurb:
         'Message us for help to get your compensation, even after returning home',
       route: `${Path.SupportDetail}/jwb`,
-    }, 
+    },
   ];
 }
 
@@ -195,14 +190,13 @@ const TWC2_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
   },
 };
 
-
-
 const PRO_BONO_SG_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
   en: {
     logo: 'https://www.probono.sg/wp-content/uploads/2022/12/Pro-Bono-SG-Logo.png',
     name: 'Pro Bono SG',
     website: 'https://www.probono.sg/',
-    blurbIntro: 'Pro Bono SG (UEN No. 201700430E) is a registered charity with the status of Institution of a Public Character and a company limited by guarantee. It started as a department within The Law Society of Singapore and later became Law Society Pro Bono Services. Since 2007, we’ve expanded our legal initiatives and programs, helping over 132,000 people with legal awareness, guidance, and representation. In FY 21/22, we helped over 17,000 individuals and community organisations. Our volunteer base has grown to 1,000 registered volunteers from various industries and specialities.',
+    blurbIntro:
+      'Pro Bono SG (UEN No. 201700430E) is a registered charity with the status of Institution of a Public Character and a company limited by guarantee. It started as a department within The Law Society of Singapore and later became Law Society Pro Bono Services. Since 2007, we’ve expanded our legal initiatives and programs, helping over 132,000 people with legal awareness, guidance, and representation. In FY 21/22, we helped over 17,000 individuals and community organisations. Our volunteer base has grown to 1,000 registered volunteers from various industries and specialities.',
     blurbFacebookLinks: {
       title: '',
       imageSrc: '',
@@ -218,7 +212,8 @@ const PRO_BONO_SG_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
       ],
     },
     ctaButtonText: 'Schedule a Free Legal Clinic',
-    ctaLink: 'https://forms.office.com/Pages/ResponsePage.aspx?id=2SIByMB8W06hRKsXHMIqYg9U_LFeiCRHgqHNQqZ_EfxUMTJZNkhEMUlOMU00WVlUODROTFBMTU5IMyQlQCN0PWcu',
+    ctaLink:
+      'https://forms.office.com/Pages/ResponsePage.aspx?id=2SIByMB8W06hRKsXHMIqYg9U_LFeiCRHgqHNQqZ_EfxUMTJZNkhEMUlOMU00WVlUODROTFBMTU5IMyQlQCN0PWcu',
     ctaIcon: '',
   },
 };
@@ -228,7 +223,8 @@ const IRR_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     logo: 'https://www.agoodspace.org/wp-content/uploads/2020/09/0.png',
     name: 'ItsRainingRaincoats',
     website: 'https://itsrainingraincoats.com/',
-    blurbIntro: 'ItsRainingRaincoats is a Singapore charity that aims to build bridges of integration between migrant workers and residents of Singapore. We work to improve their welfare and believe that their seamless integration into our community will benefit not just our migrant workers but Singapore as a whole.',
+    blurbIntro:
+      'ItsRainingRaincoats is a Singapore charity that aims to build bridges of integration between migrant workers and residents of Singapore. We work to improve their welfare and believe that their seamless integration into our community will benefit not just our migrant workers but Singapore as a whole.',
     blurbFacebookLinks: {
       title: '',
       imageSrc: '',
@@ -254,7 +250,8 @@ const HEALTHSERVE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     logo: 'https://img.paperform.co/fetch/w_400,f_auto/https://s3.amazonaws.com/pf-upload-01/u-40359/1/2019-10-07/xm03ygs/HealthServe%20Logo%20colour.png',
     name: 'HealthServe',
     website: 'https://www.healthserve.org.sg/',
-    blurbIntro: 'Founded in 2006 on Christian values, HealthServe is an IPC registered charity that seeks to bring healing and hope to vulnerable low-wage migrant workers in Singapore.',
+    blurbIntro:
+      'Founded in 2006 on Christian values, HealthServe is an IPC registered charity that seeks to bring healing and hope to vulnerable low-wage migrant workers in Singapore.',
     blurbFacebookLinks: {
       title: '',
       imageSrc: '',
@@ -280,7 +277,8 @@ const AIDHA_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     logo: 'https://www.aidha.org/wp-content/uploads/2018/06/logo.jpg',
     name: 'Aidha',
     website: 'https://www.aidha.org/',
-    blurbIntro: 'Aidha offers courses for helpers in money management, communication, computer and entrepreneurship. Aidha’s mission is to help migrant domestic workers and low-income Singaporean women achieve economic independence through financial education, wealth creation and entrepreneurship. Founded in 2006, Aidha is an award-winning charity with Institution of Public Character (IPC) status. We have 500 students currently enrolled in our programmes.',
+    blurbIntro:
+      'Aidha offers courses for helpers in money management, communication, computer and entrepreneurship. Aidha’s mission is to help migrant domestic workers and low-income Singaporean women achieve economic independence through financial education, wealth creation and entrepreneurship. Founded in 2006, Aidha is an award-winning charity with Institution of Public Character (IPC) status. We have 500 students currently enrolled in our programmes.',
     blurbFacebookLinks: {
       title: '',
       imageSrc: '',
@@ -306,7 +304,8 @@ const ACMI_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     logo: 'https://acmi.org.sg/wp-content/uploads/2022/09/logo.png',
     name: 'ACMI',
     website: 'https://acmi.org.sg/',
-    blurbIntro: 'ACMI was commissioned on June 15 with the mission of meeting the special pastoral needs of migrants and itinerant people in the Archdiocese in Singapore, and conducted activities like raising awareness to newspapers and having a hotline for those in need to call.',
+    blurbIntro:
+      'ACMI was commissioned on June 15 with the mission of meeting the special pastoral needs of migrants and itinerant people in the Archdiocese in Singapore, and conducted activities like raising awareness to newspapers and having a hotline for those in need to call.',
     blurbFacebookLinks: {
       title: '',
       imageSrc: '',
@@ -332,7 +331,8 @@ const HOME_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     logo: 'https://images.squarespace-cdn.com/content/v1/5a12725612abd96b9c737354/1512006074840-DDTG0JDU6HZ72GX7KSO9/HOME+Logo.jpg?format=1500w',
     name: 'HOME',
     website: 'https://www.home.org.sg/',
-    blurbIntro: 'Humanitarian Organization for Migration Economics [“H.O.M.E.”] is a Singapore-based charity founded in 2004 by the late Ms Bridget Tan. HOME is dedicated to empowering and supporting migrant workers who experience abuse and exploitation. We provide immediate crisis intervention as well as long-term support such as education and training programmes to achieve our goal of enhancing the wellbeing and employment prospects of migrant workers. HOME also promotes the diverse voices of migrant workers in Singapore through outreach projects, and public education. Three pillars guide us: Welfare, Empowerment and Advocacy.',
+    blurbIntro:
+      'Humanitarian Organization for Migration Economics [“H.O.M.E.”] is a Singapore-based charity founded in 2004 by the late Ms Bridget Tan. HOME is dedicated to empowering and supporting migrant workers who experience abuse and exploitation. We provide immediate crisis intervention as well as long-term support such as education and training programmes to achieve our goal of enhancing the wellbeing and employment prospects of migrant workers. HOME also promotes the diverse voices of migrant workers in Singapore through outreach projects, and public education. Three pillars guide us: Welfare, Empowerment and Advocacy.',
     blurbFacebookLinks: {
       title: '',
       imageSrc: '',
@@ -358,7 +358,8 @@ const CDE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     logo: 'https://scontent.fsin3-1.fna.fbcdn.net/v/t1.18169-9/13076581_612143168942885_2440759659123028479_n.png?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=hYQXtTI7hiUAX8X8AOi&_nc_ht=scontent.fsin3-1.fna&oh=00_AfCL2PBhYS1bKjNP95GT2tJQLnmnmxkM9Lh5srSezScQog&oe=64904C2D',
     name: 'Centre for Domestic Employees (CDE)',
     website: 'https://www.cde.org.sg/wps/portal/cde/home/',
-    blurbIntro: 'The Centre for Domestic Employees (CDE) promote the fair treatment of all domestic employees in Singapore through issues resolution, humanitarian aid, social integration and support. We can support you in up-skilling and emotional resilience',
+    blurbIntro:
+      'The Centre for Domestic Employees (CDE) promote the fair treatment of all domestic employees in Singapore through issues resolution, humanitarian aid, social integration and support. We can support you in up-skilling and emotional resilience',
     blurbFacebookLinks: {
       title: 'Find us on Facebook',
       imageSrc: '/images/facebook-icon.svg',
@@ -374,17 +375,18 @@ const CDE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     ctaIcon: '',
   },
 };
-  
-  const FAST_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
+
+const FAST_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
   en: {
-    logo: 'https://www.fast.org.sg/assets/footer/FAST-Logo.png',
+    logo: '/images/fast-logo.png',
     name: 'Foreign Domestic Worker Association for Social Support and Training (FAST)',
     website: 'https://www.fast.org.sg/',
-    blurbIntro: 'FAST empowers foreign domestic workers through various programs, including skills training, counseling, and community engagement, fostering their well-being and integration into society. FAST also conducts a two-day Onboarding and Integration Programme to help new MDW arrivals adjust and adapt to work life in Singapore, learning life essentials',
+    blurbIntro:
+      'FAST empowers foreign domestic workers through various programs, including skills training, counseling, and community engagement, fostering their well-being and integration into society. FAST also conducts a two-day Onboarding and Integration Programme to help new MDW arrivals adjust and adapt to work life in Singapore, learning life essentials',
     blurbFacebookLinks: {
       title: 'Explore our services',
       imageSrc: 'https://cdn-icons-png.flaticon.com/512/2491/2491484.png',
-   links: [
+      links: [
         {
           href: 'https://www.fast.org.sg/staticpage/event',
           text: 'Events',
@@ -393,11 +395,11 @@ const CDE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
           href: 'https://www.fast.org.sg/training/lifelong-learning',
           text: 'Training',
         },
-          {
+        {
           href: 'https://www.fast.org.sg/clubhouse',
           text: 'Clubhouse',
         },
-            {
+        {
           href: 'https://www.fast.org.sg/social-support',
           text: 'Our services: 24-hour helpline, counseling, mediation, befriender, legal aid, humanitarian aid',
         },
@@ -406,65 +408,63 @@ const CDE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
           text: 'Facebook page',
         },
       ],
-  
     },
     ctaButtonText: 'Visit our website for a list of our services',
     ctaLink: 'https://www.fast.org.sg/social-support',
     ctaIcon: '',
-  }, 
+  },
 };
-  
-  
-  const HAGAR_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
+
+const HAGAR_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
   en: {
     logo: 'https://hagar.org.sg/wp-content/uploads/2019/05/Masterlogo300.jpg',
     name: 'Hagar',
     website: 'https://hagar.org.sg/human-trafficking-in-singapore/',
-    blurbIntro: 'Hagar Singapore provides holistic support to survivors of human trafficking, offering shelter, counseling, education, and vocational training to empower them towards a new and dignified life.',
+    blurbIntro:
+      'Hagar Singapore provides holistic support to survivors of human trafficking, offering shelter, counseling, education, and vocational training to empower them towards a new and dignified life.',
     blurbFacebookLinks: {
       title: '',
       imageSrc: '/images/facebook-icon.svg',
-   links: [
-       
+      links: [
         {
           href: 'https://www.facebook.com/HagarSingapore/',
           text: 'Facebook page',
         },
       ],
-  
     },
     ctaButtonText: 'Message us on Facebook',
     ctaLink: 'https://www.facebook.com/HagarSingapore/',
     ctaIcon: '',
-  }, 
+  },
 };
 
-  const JWB_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
+const JWB_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
   en: {
     logo: 'https://forjusticewithoutborders.org/wp-content/themes/jwb/dist/vue/ef4c8813de08deca2bebc3cab7c2c4c4.png',
     name: 'Justice Without Borders (JWB)',
     website: 'https://forjusticewithoutborders.org/about/',
-    blurbIntro: 'We support victims of labour exploitation and human trafficking in getting compensation against their abusers, even after they return home.',
+    blurbIntro:
+      'We support victims of labour exploitation and human trafficking in getting compensation against their abusers, even after they return home.',
     blurbFacebookLinks: {
       title: '',
       imageSrc: '/images/facebook-icon.svg',
-   links: [
-       
+      links: [
         {
           href: 'https://www.facebook.com/forJWB',
           text: 'Facebook page',
         },
       ],
-  
     },
     ctaButtonText: 'We can help you claim compensation',
     ctaLink: 'https://forjusticewithoutborders.org/get-help/',
     ctaIcon: '',
-  }, 
-};  
-  
-  
-export function getPartnerDetail(partner: string | undefined, language: LanguageOption): SupportDetailWithSocials {
+  },
+};
+
+export function getPartnerDetail(
+  partner: string | undefined,
+  language: LanguageOption
+): SupportDetailWithSocials {
   switch (partner) {
     case 'twc2':
       return TWC2_DETAIL[language];
@@ -482,12 +482,12 @@ export function getPartnerDetail(partner: string | undefined, language: Language
       return HOME_DETAIL[language];
     case 'cde':
       return CDE_DETAIL[language];
-     case 'fast':
+    case 'fast':
       return FAST_DETAIL[language];
-     case 'hagar':
-      return HAGAR_DETAIL[language];  
-     case 'jwb':
-      return JWB_DETAIL[language];  
+    case 'hagar':
+      return HAGAR_DETAIL[language];
+    case 'jwb':
+      return JWB_DETAIL[language];
     default:
       return EMPTY_DETAIL[language];
   }

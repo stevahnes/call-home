@@ -18,7 +18,6 @@ export function ServiceCard(props: ServiceCardDetail) {
         component="img"
         sx={{
           width: '3.5rem',
-          height: '3.5rem',
           marginY: 'auto',
           marginLeft: '16px',
           marginRight: '0',
