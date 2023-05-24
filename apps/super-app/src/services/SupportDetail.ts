@@ -135,6 +135,20 @@ export function getServiceCardDetails(): ServiceCardDetail[] {
         'Message us for help to get your compensation, even after returning home',
       route: `${Path.SupportDetail}/jwb`,
     },
+    {
+      logo: 'https://scontent.fsin10-1.fna.fbcdn.net/v/t39.30808-6/255932328_103110398863589_3014459715661696006_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=K-vuGE4NVjQAX_FPgE_&_nc_ht=scontent.fsin10-1.fna&oh=00_AfDdaRsm2ttP8yoQW5-r9C9xot73pm9ATYX2voaYM9lnMA&oe=64738BF2',
+      name: 'Alliance of Domestic Employees Outreach (ADEO)',
+      shortBlurb:
+        'Message us for mental wellness programs, case management, and meaningful events',
+      route: `${Path.SupportDetail}/adeo`,
+    },  
+    {
+      logo: 'https://static.wixstatic.com/media/862048_3725dd21f0d64ef492b3e5665c257ab5~mv2.jpg/v1/crop/x_46,y_63,w_725,h_433/fill/w_219,h_131,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG-20180416-WA0009%20(1).jpg',
+      name: 'SG Accident Help Centre',
+      shortBlurb:
+        'Call us if you are injured and need help in transport or recovery',
+      route: `${Path.SupportDetail}/sgaccidenthelpcentre`,
+    },  
   ];
 }
 
@@ -461,6 +475,54 @@ const JWB_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
   },
 };
 
+
+const ADEO_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
+  en: {
+    logo: 'https://scontent.fsin10-1.fna.fbcdn.net/v/t39.30808-6/255932328_103110398863589_3014459715661696006_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=K-vuGE4NVjQAX_FPgE_&_nc_ht=scontent.fsin10-1.fna&oh=00_AfDdaRsm2ttP8yoQW5-r9C9xot73pm9ATYX2voaYM9lnMA&oe=64738BF2',
+    name: 'Alliance of Domestic Employees Outreach (ADEO)',
+    website: 'https://adeo.sg/#what-we-do',
+    blurbIntro:
+      'ADEO is a movement of the Hope Initiative Alliance and aims to provide programs and events to care for domestic helpers in the areas of mental wellness, case management, recreation activities, empowerment, and skill development',
+    blurbFacebookLinks: {
+      title: '',
+      imageSrc: '/images/facebook-icon.svg',
+      links: [
+        {
+          href: 'https://www.facebook.com/sgadeo',
+          text: 'Facebook page',
+        },
+      ],
+    },
+    ctaButtonText: 'Message us',
+    ctaLink: 'tel:+65%206304%203482',
+    ctaIcon: '',
+  },
+};
+  
+const SGACCIDENTHELPCENTRE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
+  en: {
+    logo: 'https://static.wixstatic.com/media/862048_3725dd21f0d64ef492b3e5665c257ab5~mv2.jpg/v1/crop/x_46,y_63,w_725,h_433/fill/w_219,h_131,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG-20180416-WA0009%20(1).jpg',
+    name: 'SG Accident Help Centre',
+    website: 'https://www.sgaccident.org.sg/about',
+    blurbIntro:
+      'We are here for the injured and needy. We want to care for injured migrant workers in the community and teach employed workers on workplace safety and injury prevention',
+    blurbFacebookLinks: {
+      title: '',
+      imageSrc: '/images/facebook-icon.svg',
+      links: [
+        {
+          href: 'https://www.facebook.com/pages/SG%20Accident%20Help%20Centre/335942880619911/',
+          text: 'Facebook page',
+        },
+      ],
+    },
+    ctaButtonText: 'Call us',
+    ctaLink: 'tel:+65%206291%200751',
+    ctaIcon: '',
+  },
+};  
+  
+  
 export function getPartnerDetail(
   partner: string | undefined,
   language: LanguageOption
@@ -488,6 +550,10 @@ export function getPartnerDetail(
       return HAGAR_DETAIL[language];
     case 'jwb':
       return JWB_DETAIL[language];
+    case 'adeo':
+      return ADEO_DETAIL[language];
+    case 'sgaccidenthelpcentre':
+      return ADEO_DETAIL[language];
     default:
       return EMPTY_DETAIL[language];
   }
