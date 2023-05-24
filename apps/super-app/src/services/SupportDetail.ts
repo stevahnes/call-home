@@ -149,6 +149,14 @@ export function getServiceCardDetails(): ServiceCardDetail[] {
         'Call us if you are injured and need help in transport or recovery',
       route: `${Path.SupportDetail}/sgaccidenthelpcentre`,
     },  
+    {
+      logo: 'https://scontent.fsin10-1.fna.fbcdn.net/v/t39.30808-6/267546964_4622779631144590_2143793373095189340_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HMteg1STdKgAX8duBvt&_nc_ht=scontent.fsin10-1.fna&oh=00_AfB4HgW_GxxjnkcJ5AlG2w6N43wYsYn3D_zFBIEAUkK2rQ&oe=64724459',
+      name: 'Migrant Workers’ Centre (MWC)',
+      shortBlurb:
+        'Call us if you need shelter and food and legal advice. We also organise integration activities and fun events',
+      route: `${Path.SupportDetail}/mwc`,
+    },  
+  
   ];
 }
 
@@ -399,7 +407,7 @@ const FAST_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
       'FAST empowers foreign domestic workers through various programs, including skills training, counseling, and community engagement, fostering their well-being and integration into society. FAST also conducts a two-day Onboarding and Integration Programme to help new MDW arrivals adjust and adapt to work life in Singapore, learning life essentials',
     blurbFacebookLinks: {
       title: 'Explore our services',
-      imageSrc: 'https://cdn-icons-png.flaticon.com/512/2491/2491484.png',
+      imageSrc: 'https://www.iconpacks.net/icons/2/free-click-icon-2384-thumb.png',
       links: [
         {
           href: 'https://www.fast.org.sg/staticpage/event',
@@ -523,6 +531,35 @@ const SGACCIDENTHELPCENTRE_DETAIL: Record<LanguageOption, SupportDetailWithSocia
 };  
   
   
+const MWC_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
+  en: {
+    logo: 'https://scontent.fsin10-1.fna.fbcdn.net/v/t39.30808-6/267546964_4622779631144590_2143793373095189340_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HMteg1STdKgAX8duBvt&_nc_ht=scontent.fsin10-1.fna&oh=00_AfB4HgW_GxxjnkcJ5AlG2w6N43wYsYn3D_zFBIEAUkK2rQ&oe=64724459',
+    name: 'Migrant Workers' Centre',
+    website: 'https://mwc.org.sg/wps/portal/mwc/home/Aboutus/whatwedo',
+    blurbIntro:
+      'We can advise you about unfair employment practices and provide shelter and food for those in need. We also provide membership to protect you against critical illness, death, and accidents as well as meaningful benefits',
+    blurbFacebookLinks: {
+     title: 'Explore our services',
+      imageSrc: 'https://www.iconpacks.net/icons/2/free-click-icon-2384-thumb.png',
+      links: [
+        {
+          href: 'https://mwc.org.sg/wps/portal/mwc/home/services/associatemembership/',
+          text: 'MWC Associate Membership',
+        },
+        {
+          href: 'https://mwc.org.sg/wps/portal/mwc/home/services/freelegalclinic/',
+          text: 'Free Legal Clinic',
+        },
+      ],
+    },
+    ctaButtonText: 'Call us',
+    ctaLink: 'tel:+65%206536%202692',
+    ctaIcon: '',
+  },
+};  
+  
+  
+  
 export function getPartnerDetail(
   partner: string | undefined,
   language: LanguageOption
@@ -553,7 +590,9 @@ export function getPartnerDetail(
     case 'adeo':
       return ADEO_DETAIL[language];
     case 'sgaccidenthelpcentre':
-      return ADEO_DETAIL[language];
+      return SGACCIDENTHELPCENTRE_DETAIL[language];
+    case 'mwc':
+      return MWC_DETAIL[language];
     default:
       return EMPTY_DETAIL[language];
   }
