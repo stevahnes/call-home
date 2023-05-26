@@ -141,22 +141,21 @@ export function getServiceCardDetails(): ServiceCardDetail[] {
       shortBlurb:
         'Message us for mental wellness programs, case management, and meaningful events',
       route: `${Path.SupportDetail}/adeo`,
-    },  
+    },
     {
       logo: 'https://static.wixstatic.com/media/862048_3725dd21f0d64ef492b3e5665c257ab5~mv2.jpg/v1/crop/x_46,y_63,w_725,h_433/fill/w_219,h_131,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG-20180416-WA0009%20(1).jpg',
       name: 'SG Accident Help Centre',
       shortBlurb:
         'Call us if you are injured and need help in transport or recovery',
       route: `${Path.SupportDetail}/sgaccidenthelpcentre`,
-    },  
+    },
     {
       logo: 'https://scontent.fsin10-1.fna.fbcdn.net/v/t39.30808-6/267546964_4622779631144590_2143793373095189340_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HMteg1STdKgAX8duBvt&_nc_ht=scontent.fsin10-1.fna&oh=00_AfB4HgW_GxxjnkcJ5AlG2w6N43wYsYn3D_zFBIEAUkK2rQ&oe=64724459',
       name: 'Migrant Workers’ Centre (MWC)',
       shortBlurb:
         'Call us if you need shelter and food and legal advice. We also organise integration activities and fun events',
       route: `${Path.SupportDetail}/mwc`,
-    },  
-  
+    },
   ];
 }
 
@@ -407,7 +406,8 @@ const FAST_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
       'FAST empowers foreign domestic workers through various programs, including skills training, counseling, and community engagement, fostering their well-being and integration into society. FAST also conducts a two-day Onboarding and Integration Programme to help new MDW arrivals adjust and adapt to work life in Singapore, learning life essentials',
     blurbFacebookLinks: {
       title: 'Explore our services',
-      imageSrc: 'https://www.iconpacks.net/icons/2/free-click-icon-2384-thumb.png',
+      imageSrc:
+        'https://www.iconpacks.net/icons/2/free-click-icon-2384-thumb.png',
       links: [
         {
           href: 'https://www.fast.org.sg/staticpage/event',
@@ -483,7 +483,6 @@ const JWB_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
   },
 };
 
-
 const ADEO_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
   en: {
     logo: 'https://scontent.fsin10-1.fna.fbcdn.net/v/t39.30808-6/255932328_103110398863589_3014459715661696006_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=K-vuGE4NVjQAX_FPgE_&_nc_ht=scontent.fsin10-1.fna&oh=00_AfDdaRsm2ttP8yoQW5-r9C9xot73pm9ATYX2voaYM9lnMA&oe=64738BF2',
@@ -506,8 +505,11 @@ const ADEO_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     ctaIcon: '',
   },
 };
-  
-const SGACCIDENTHELPCENTRE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
+
+const SGACCIDENTHELPCENTRE_DETAIL: Record<
+  LanguageOption,
+  SupportDetailWithSocials
+> = {
   en: {
     logo: 'https://static.wixstatic.com/media/862048_3725dd21f0d64ef492b3e5665c257ab5~mv2.jpg/v1/crop/x_46,y_63,w_725,h_433/fill/w_219,h_131,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG-20180416-WA0009%20(1).jpg',
     name: 'SG Accident Help Centre',
@@ -528,19 +530,19 @@ const SGACCIDENTHELPCENTRE_DETAIL: Record<LanguageOption, SupportDetailWithSocia
     ctaLink: 'tel:+65%206291%200751',
     ctaIcon: '',
   },
-};  
-  
-  
+};
+
 const MWC_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
   en: {
     logo: 'https://scontent.fsin10-1.fna.fbcdn.net/v/t39.30808-6/267546964_4622779631144590_2143793373095189340_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HMteg1STdKgAX8duBvt&_nc_ht=scontent.fsin10-1.fna&oh=00_AfB4HgW_GxxjnkcJ5AlG2w6N43wYsYn3D_zFBIEAUkK2rQ&oe=64724459',
-    name: 'Migrant Workers' Centre',
+    name: "Migrant Workers' Centre",
     website: 'https://mwc.org.sg/wps/portal/mwc/home/Aboutus/whatwedo',
     blurbIntro:
       'We can advise you about unfair employment practices and provide shelter and food for those in need. We also provide membership to protect you against critical illness, death, and accidents as well as meaningful benefits',
     blurbFacebookLinks: {
-     title: 'Explore our services',
-      imageSrc: 'https://www.iconpacks.net/icons/2/free-click-icon-2384-thumb.png',
+      title: 'Explore our services',
+      imageSrc:
+        'https://www.iconpacks.net/icons/2/free-click-icon-2384-thumb.png',
       links: [
         {
           href: 'https://mwc.org.sg/wps/portal/mwc/home/services/associatemembership/',
@@ -556,10 +558,8 @@ const MWC_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     ctaLink: 'tel:+65%206536%202692',
     ctaIcon: '',
   },
-};  
-  
-  
-  
+};
+
 export function getPartnerDetail(
   partner: string | undefined,
   language: LanguageOption
