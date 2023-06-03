@@ -136,7 +136,7 @@ export function getServiceCardDetails(): ServiceCardDetail[] {
       route: `${Path.SupportDetail}/jwb`,
     },
     {
-      logo: 'https://scontent.fsin10-1.fna.fbcdn.net/v/t39.30808-6/255932328_103110398863589_3014459715661696006_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=K-vuGE4NVjQAX_FPgE_&_nc_ht=scontent.fsin10-1.fna&oh=00_AfDdaRsm2ttP8yoQW5-r9C9xot73pm9ATYX2voaYM9lnMA&oe=64738BF2',
+      logo: '/images/adeo-logo.jpeg',
       name: 'Alliance of Domestic Employees Outreach (ADEO)',
       shortBlurb:
         'Message us for mental wellness programs, case management, and meaningful events',
@@ -150,7 +150,7 @@ export function getServiceCardDetails(): ServiceCardDetail[] {
       route: `${Path.SupportDetail}/sgaccidenthelpcentre`,
     },
     {
-      logo: 'https://scontent.fsin10-1.fna.fbcdn.net/v/t39.30808-6/267546964_4622779631144590_2143793373095189340_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HMteg1STdKgAX8duBvt&_nc_ht=scontent.fsin10-1.fna&oh=00_AfB4HgW_GxxjnkcJ5AlG2w6N43wYsYn3D_zFBIEAUkK2rQ&oe=64724459',
+      logo: '/images/mwc-logo.jpeg',
       name: 'Migrant Workers’ Centre (MWC)',
       shortBlurb:
         'Call us if you need shelter and food and legal advice. We also organise integration activities and fun events',
@@ -485,7 +485,7 @@ const JWB_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
 
 const ADEO_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
   en: {
-    logo: 'https://scontent.fsin10-1.fna.fbcdn.net/v/t39.30808-6/255932328_103110398863589_3014459715661696006_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=K-vuGE4NVjQAX_FPgE_&_nc_ht=scontent.fsin10-1.fna&oh=00_AfDdaRsm2ttP8yoQW5-r9C9xot73pm9ATYX2voaYM9lnMA&oe=64738BF2',
+    logo: '/images/adeo-logo.jpeg',
     name: 'Alliance of Domestic Employees Outreach (ADEO)',
     website: 'https://adeo.sg/#what-we-do',
     blurbIntro:
@@ -534,7 +534,7 @@ const SGACCIDENTHELPCENTRE_DETAIL: Record<
 
 const MWC_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
   en: {
-    logo: 'https://scontent.fsin10-1.fna.fbcdn.net/v/t39.30808-6/267546964_4622779631144590_2143793373095189340_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HMteg1STdKgAX8duBvt&_nc_ht=scontent.fsin10-1.fna&oh=00_AfB4HgW_GxxjnkcJ5AlG2w6N43wYsYn3D_zFBIEAUkK2rQ&oe=64724459',
+    logo: '/images/mwc-logo.jpeg',
     name: "Migrant Workers' Centre",
     website: 'https://mwc.org.sg/wps/portal/mwc/home/Aboutus/whatwedo',
     blurbIntro:
