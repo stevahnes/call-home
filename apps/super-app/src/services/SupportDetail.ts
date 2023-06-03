@@ -407,7 +407,7 @@ const FAST_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     blurbFacebookLinks: {
       title: 'Explore our services',
       imageSrc:
-        'https://www.iconpacks.net/icons/2/free-click-icon-2384-thumb.png',
+        '/images/link-icon.png',
       links: [
         {
           href: 'https://www.fast.org.sg/staticpage/event',
@@ -542,7 +542,7 @@ const MWC_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     blurbFacebookLinks: {
       title: 'Explore our services',
       imageSrc:
-        'https://www.iconpacks.net/icons/2/free-click-icon-2384-thumb.png',
+        '/images/link-icon.png',
       links: [
         {
           href: 'https://mwc.org.sg/wps/portal/mwc/home/services/associatemembership/',
