@@ -153,7 +153,7 @@ export function getServiceCardDetails(): ServiceCardDetail[] {
       logo: '/images/mwc-logo.jpeg',
       name: 'Migrant Workers’ Centre (MWC)',
       shortBlurb:
-        'Call us if you need shelter and food and legal advice. We also organise integration activities and fun events',
+        'If you have any employment-related issues, call our 24/7 helpline @ 65362692',
       route: `${Path.SupportDetail}/mwc`,
     },
   ];
