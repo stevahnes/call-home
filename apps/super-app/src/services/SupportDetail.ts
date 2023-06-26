@@ -110,7 +110,7 @@ export function getServiceCardDetails(): ServiceCardDetail[] {
       route: `${Path.SupportDetail}/home`,
     },
     {
-      logo: 'https://scontent.fsin3-1.fna.fbcdn.net/v/t1.18169-9/13076581_612143168942885_2440759659123028479_n.png?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=hYQXtTI7hiUAX8X8AOi&_nc_ht=scontent.fsin3-1.fna&oh=00_AfCL2PBhYS1bKjNP95GT2tJQLnmnmxkM9Lh5srSezScQog&oe=64904C2D',
+      logo: '/images/cde-logo.png',
       name: 'Centre for Domestic Employees (CDE)',
       shortBlurb: '24-hour toll-free helpline and fun social activities',
       route: `${Path.SupportDetail}/cde`,
@@ -376,7 +376,7 @@ const HOME_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
 
 const CDE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
   en: {
-    logo: 'https://scontent.fsin3-1.fna.fbcdn.net/v/t1.18169-9/13076581_612143168942885_2440759659123028479_n.png?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=hYQXtTI7hiUAX8X8AOi&_nc_ht=scontent.fsin3-1.fna&oh=00_AfCL2PBhYS1bKjNP95GT2tJQLnmnmxkM9Lh5srSezScQog&oe=64904C2D',
+    logo: '/images/cde-logo.png',
     name: 'Centre for Domestic Employees (CDE)',
     website: 'https://www.cde.org.sg/wps/portal/cde/home/',
     blurbIntro:
@@ -406,8 +406,7 @@ const FAST_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
       'FAST empowers foreign domestic workers through various programs, including skills training, counseling, and community engagement, fostering their well-being and integration into society. FAST also conducts a two-day Onboarding and Integration Programme to help new MDW arrivals adjust and adapt to work life in Singapore, learning life essentials',
     blurbFacebookLinks: {
       title: 'Explore our services',
-      imageSrc:
-        '/images/link-icon.png',
+      imageSrc: '/images/link-icon.png',
       links: [
         {
           href: 'https://www.fast.org.sg/staticpage/event',
@@ -541,8 +540,7 @@ const MWC_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
       'We can advise you about unfair employment practices and provide shelter and food for those in need. We also provide membership to protect you against critical illness, death, and accidents as well as meaningful benefits',
     blurbFacebookLinks: {
       title: 'Explore our services',
-      imageSrc:
-        '/images/link-icon.png',
+      imageSrc: '/images/link-icon.png',
       links: [
         {
           href: 'https://mwc.org.sg/wps/portal/mwc/home/services/associatemembership/',
