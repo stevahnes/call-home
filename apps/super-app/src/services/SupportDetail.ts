@@ -499,14 +499,10 @@ export function getPartnerDetail(
       return TWC2_DETAIL[language];
     case 'pro-bono-sg':
       return PRO_BONO_SG_DETAIL[language];
-    case 'irr':
-      return IRR_DETAIL[language];
     case 'healthserve':
       return HEALTHSERVE_DETAIL[language];
     case 'aidha':
       return AIDHA_DETAIL[language];
-    case 'acmi':
-      return ACMI_DETAIL[language];
     case 'home':
       return HOME_DETAIL[language];
     case 'cde':
