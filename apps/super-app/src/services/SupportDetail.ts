@@ -78,13 +78,6 @@ export function getServiceCardDetails(): ServiceCardDetail[] {
       route: `${Path.SupportDetail}/pro-bono-sg`,
     },
     {
-      logo: 'https://www.agoodspace.org/wp-content/uploads/2020/09/0.png',
-      name: 'ItsRainingRaincoats',
-      shortBlurb:
-        'Register for interactive activities, learning, and welfare programs',
-      route: `${Path.SupportDetail}/irr`,
-    },
-    {
       logo: 'https://img.paperform.co/fetch/w_400,f_auto/https://s3.amazonaws.com/pf-upload-01/u-40359/1/2019-10-07/xm03ygs/HealthServe%20Logo%20colour.png',
       name: 'HealthServe',
       shortBlurb: 'Call us for mental health and counseling hotline',
@@ -95,13 +88,6 @@ export function getServiceCardDetails(): ServiceCardDetail[] {
       name: 'Aidha',
       shortBlurb: 'Learn financial literacy and confidence skills',
       route: `${Path.SupportDetail}/aidha`,
-    },
-    {
-      logo: 'https://acmi.org.sg/wp-content/uploads/2022/09/logo.png',
-      name: 'ACMI',
-      shortBlurb:
-        'Reach out to us for skills development and well-being support',
-      route: `${Path.SupportDetail}/acmi`,
     },
     {
       logo: 'https://images.squarespace-cdn.com/content/v1/5a12725612abd96b9c737354/1512006074840-DDTG0JDU6HZ72GX7KSO9/HOME+Logo.jpg?format=1500w',
@@ -239,33 +225,6 @@ const PRO_BONO_SG_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
   },
 };
 
-const IRR_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
-  en: {
-    logo: 'https://www.agoodspace.org/wp-content/uploads/2020/09/0.png',
-    name: 'ItsRainingRaincoats',
-    website: 'https://itsrainingraincoats.com/',
-    blurbIntro:
-      'ItsRainingRaincoats is a Singapore charity that aims to build bridges of integration between migrant workers and residents of Singapore. We work to improve their welfare and believe that their seamless integration into our community will benefit not just our migrant workers but Singapore as a whole.',
-    blurbFacebookLinks: {
-      title: '',
-      imageSrc: '',
-      links: [
-        {
-          href: '',
-          text: '',
-        },
-        {
-          href: '',
-          text: '',
-        },
-      ],
-    },
-    ctaButtonText: 'Visit IRR Facebook Page for Free Services',
-    ctaLink: 'https://www.facebook.com/itsrainingraincoats/',
-    ctaIcon: '',
-  },
-};
-
 const HEALTHSERVE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
   en: {
     logo: 'https://img.paperform.co/fetch/w_400,f_auto/https://s3.amazonaws.com/pf-upload-01/u-40359/1/2019-10-07/xm03ygs/HealthServe%20Logo%20colour.png',
@@ -316,33 +275,6 @@ const AIDHA_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     },
     ctaButtonText: 'Enrol in free short courses',
     ctaLink: 'https://www.aidha.org/courses/free-short-courses/',
-    ctaIcon: '',
-  },
-};
-
-const ACMI_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
-  en: {
-    logo: 'https://acmi.org.sg/wp-content/uploads/2022/09/logo.png',
-    name: 'ACMI',
-    website: 'https://acmi.org.sg/',
-    blurbIntro:
-      'ACMI was commissioned on June 15 with the mission of meeting the special pastoral needs of migrants and itinerant people in the Archdiocese in Singapore, and conducted activities like raising awareness to newspapers and having a hotline for those in need to call.',
-    blurbFacebookLinks: {
-      title: '',
-      imageSrc: '',
-      links: [
-        {
-          href: '',
-          text: '',
-        },
-        {
-          href: '',
-          text: '',
-        },
-      ],
-    },
-    ctaButtonText: 'Explore our skills development services',
-    ctaLink: 'https://acmi.org.sg/skills-development/',
     ctaIcon: '',
   },
 };
