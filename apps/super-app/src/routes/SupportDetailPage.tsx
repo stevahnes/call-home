@@ -13,7 +13,7 @@ import {
   getPartnerDetail,
   useLanguage,
 } from '../services';
-import { Container } from '../common/components';
+import { Container, Carousel } from '../common/components';
 import { PrimaryButton } from '../common/components/RoundedButton';
 import './SupportDetailPage.css';
 import { Path } from './paths';
@@ -190,6 +190,7 @@ export function SupportDetailPage() {
     name,
     website,
     blurbIntro,
+    carouselSection,
     blurbFacebookLinks,
     ctaButtonText,
     ctaLink,
@@ -216,6 +217,7 @@ export function SupportDetailPage() {
         blurbIntro={blurbIntro}
         blurbFacebookLinks={blurbFacebookLinks}
       ></DescriptionSection>
+      {/* <Carousel carouselSection={carouselSection}></Carousel> */}
       <CtaSection
         ctaButtonText={ctaButtonText}
         ctaLink={ctaLink}

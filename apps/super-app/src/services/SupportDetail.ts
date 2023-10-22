@@ -47,7 +47,16 @@ export interface SupportDetail extends Support {
 
 // We should consider moving TWC2-specific things to their own file.
 export interface SupportDetailWithSocials extends SupportDetail {
+  carouselSection: CarouselCard[];
   blurbFacebookLinks: FacebookLinksSection;
+}
+
+export interface CarouselCard {
+  title: string;
+  description: string;
+  iconPath: string;
+  ctaText: string;
+  route: string;
 }
 
 export interface FacebookLinksSection {
@@ -151,6 +160,7 @@ const EMPTY_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     name: '',
     website: '',
     blurbIntro: '',
+    carouselSection: [],
     blurbFacebookLinks: {
       title: '',
       imageSrc: '',
@@ -177,6 +187,7 @@ const TWC2_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     name: 'Transient Workers Count Too (TWC2)',
     website: 'https://twc2.org.sg/language-menu-for-qr-code/',
     blurbIntro: `TWC2 helps all foreigners working in Singapore, including those on Work Permits and S-Passes. They help for free. Most common issues are salary non-payment, contract issues and injuries.`,
+    carouselSection: [],
     blurbFacebookLinks: {
       title: `Join TWC2's Facebook Community Pages!`,
       imageSrc: '/images/facebook-icon.svg',
@@ -204,6 +215,29 @@ const PRO_BONO_SG_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     website: 'https://www.probono.sg/',
     blurbIntro:
       'Pro Bono SG (UEN No. 201700430E) is a registered charity with the status of Institution of a Public Character and a company limited by guarantee. It started as a department within The Law Society of Singapore and later became Law Society Pro Bono Services. Since 2007, we’ve expanded our legal initiatives and programs, helping over 132,000 people with legal awareness, guidance, and representation. In FY 21/22, we helped over 17,000 individuals and community organisations. Our volunteer base has grown to 1,000 registered volunteers from various industries and specialities.',
+    carouselSection: [
+      {
+        title: 'Webinars',
+        description: 'Videos to help you',
+        iconPath: '/images/webinars.svg',
+        ctaText: 'Watch on YouTube',
+        route: '',
+      },
+      {
+        title: 'Know Your Rights',
+        description: 'General information to know your rights',
+        iconPath: '/images/know-your-rights.svg',
+        ctaText: 'English',
+        route: '',
+      },
+      {
+        title: 'Legal Glossary',
+        description: 'Useful terms to know for your legal clinic session',
+        iconPath: '/images/legal-glossary.svg',
+        ctaText: 'English/বাংলা',
+        route: '',
+      },
+    ],
     blurbFacebookLinks: {
       title: '',
       imageSrc: '',
@@ -232,6 +266,7 @@ const HEALTHSERVE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     website: 'https://www.healthserve.org.sg/',
     blurbIntro:
       'Founded in 2006 on Christian values, HealthServe is an IPC registered charity that seeks to bring healing and hope to vulnerable low-wage migrant workers in Singapore.',
+    carouselSection: [],
     blurbFacebookLinks: {
       title: '',
       imageSrc: '',
@@ -259,6 +294,7 @@ const AIDHA_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     website: 'https://www.aidha.org/',
     blurbIntro:
       'Aidha offers courses for helpers in money management, communication, computer and entrepreneurship. Aidha’s mission is to help migrant domestic workers and low-income Singaporean women achieve economic independence through financial education, wealth creation and entrepreneurship. Founded in 2006, Aidha is an award-winning charity with Institution of Public Character (IPC) status. We have 500 students currently enrolled in our programmes.',
+    carouselSection: [],
     blurbFacebookLinks: {
       title: '',
       imageSrc: '',
@@ -286,6 +322,7 @@ const HOME_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     website: 'https://www.home.org.sg/',
     blurbIntro:
       'Humanitarian Organization for Migration Economics [“H.O.M.E.”] is a Singapore-based charity founded in 2004 by the late Ms Bridget Tan. HOME is dedicated to empowering and supporting migrant workers who experience abuse and exploitation. We provide immediate crisis intervention as well as long-term support such as education and training programmes to achieve our goal of enhancing the wellbeing and employment prospects of migrant workers. HOME also promotes the diverse voices of migrant workers in Singapore through outreach projects, and public education. Three pillars guide us: Welfare, Empowerment and Advocacy.',
+    carouselSection: [],
     blurbFacebookLinks: {
       title: '',
       imageSrc: '',
@@ -313,6 +350,7 @@ const CDE_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     website: 'https://www.cde.org.sg/wps/portal/cde/home/',
     blurbIntro:
       'The Centre for Domestic Employees (CDE) promote the fair treatment of all domestic employees in Singapore through issues resolution, humanitarian aid, social integration and support. We can support you in up-skilling and emotional resilience',
+    carouselSection: [],
     blurbFacebookLinks: {
       title: 'Find us on Facebook',
       imageSrc: '/images/facebook-icon.svg',
@@ -336,6 +374,7 @@ const FAST_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     website: 'https://www.fast.org.sg/',
     blurbIntro:
       'FAST empowers foreign domestic workers through various programs, including skills training, counseling, and community engagement, fostering their well-being and integration into society. FAST also conducts a two-day Onboarding and Integration Programme to help new MDW arrivals adjust and adapt to work life in Singapore, learning life essentials',
+    carouselSection: [],
     blurbFacebookLinks: {
       title: 'Explore our services',
       imageSrc: '/images/link-icon.png',
@@ -375,6 +414,7 @@ const HAGAR_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     website: 'https://hagar.org.sg/human-trafficking-in-singapore/',
     blurbIntro:
       'Hagar Singapore provides holistic support to survivors of human trafficking, offering shelter, counseling, education, and vocational training to empower them towards a new and dignified life.',
+    carouselSection: [],
     blurbFacebookLinks: {
       title: '',
       imageSrc: '/images/facebook-icon.svg',
@@ -398,6 +438,7 @@ const JWB_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     website: 'https://forjusticewithoutborders.org/about/',
     blurbIntro:
       'We support victims of labour exploitation and human trafficking in getting compensation against their abusers, even after they return home.',
+    carouselSection: [],
     blurbFacebookLinks: {
       title: '',
       imageSrc: '/images/facebook-icon.svg',
@@ -421,6 +462,7 @@ const ADEO_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     website: 'https://adeo.sg/#what-we-do',
     blurbIntro:
       'ADEO is a movement of the Hope Initiative Alliance and aims to provide programs and events to care for domestic helpers in the areas of mental wellness, case management, recreation activities, empowerment, and skill development',
+    carouselSection: [],
     blurbFacebookLinks: {
       title: '',
       imageSrc: '/images/facebook-icon.svg',
@@ -447,6 +489,7 @@ const SGACCIDENTHELPCENTRE_DETAIL: Record<
     website: 'https://www.sgaccident.org.sg/about',
     blurbIntro:
       'We are here for the injured and needy. We want to care for injured migrant workers in the community and teach employed workers on workplace safety and injury prevention',
+    carouselSection: [],
     blurbFacebookLinks: {
       title: '',
       imageSrc: '/images/facebook-icon.svg',
@@ -470,6 +513,7 @@ const MWC_DETAIL: Record<LanguageOption, SupportDetailWithSocials> = {
     website: 'https://mwc.org.sg/wps/portal/mwc/home/Aboutus/whatwedo',
     blurbIntro:
       'We can advise you about unfair employment practices and provide shelter and food for those in need. We also provide membership to protect you against critical illness, death, and accidents as well as meaningful benefits',
+    carouselSection: [],
     blurbFacebookLinks: {
       title: 'Explore our services',
       imageSrc: '/images/link-icon.png',

@@ -6,6 +6,7 @@ export {
 } from './SupportDetail';
 export type {
   ServiceCardDetail,
+  CarouselCard,
   SupportDetailStrings,
   SupportDetailWithSocials,
   FacebookLinksSection,

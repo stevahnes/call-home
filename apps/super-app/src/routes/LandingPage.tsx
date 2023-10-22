@@ -1,8 +1,7 @@
 import './LandingPage.css';
 import { useEffect, useState } from 'react';
 import { Box, Typography } from '@mui/material';
-import { Container } from '../common/components';
-import { ServiceCard } from '../common/components/ServiceCard';
+import { Container, ServiceCard } from '../common/components';
 import {
   useLanguage,
   getServiceCardDetails,
@@ -35,20 +34,20 @@ export function LandingPage() {
         padding: 0,
       }}
     >
+      <Typography
+        variant="h4"
+        sx={{
+          padding: '16px',
+        }}
+      >
+        {headerTitle}
+      </Typography>
       <Box
         className="navbar-above"
         style={{
           padding: '0 16px',
         }}
       >
-        <Typography
-          variant="h4"
-          sx={{
-            padding: '16px 0',
-          }}
-        >
-          {headerTitle}
-        </Typography>
         {serviceCardDetails.map(({ logo, name, shortBlurb, route }) => (
           <ServiceCard
             logo={logo}
